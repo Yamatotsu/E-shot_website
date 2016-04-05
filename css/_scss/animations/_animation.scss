@@ -1,0 +1,60 @@
+/*H3 animations to the bottom */
+$rose: #ffdbdb;
+$bleu: #4f72aa;
+$bleuc: #ebf3f8;
+$bdwidth:6.8rem;
+$bdheight:4rem;
+
+.origine{
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+
+
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $bdheight $bdwidth 0 $bdwidth;
+}
+
+.position_h3{
+  position: absolute;
+  top:-5vw;
+  left:50%;
+  width:24%;
+  display: block;
+  animation: scroll_down 3s ;
+}
+@keyframes scroll_down {
+  0%{
+    top:-20vw;
+  }
+  100%{
+    top:-5vw;
+  }
+}
+
+header{
+  position: relative;
+  h3.center{
+    z-index:2;
+    border-radius: 0.2rem;
+    text-align: center;
+    padding:0.5rem;
+    color: #fff;
+    @extend .origine;
+    @extend .position_h3;
+
+  }
+  img.fleche{
+    z-index:1;
+    @extend .position_h3;
+    @extend .origine;
+  }
+}
+
+
