@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/unslider.css" />
+    <link rel="stylesheet" href="css/unslider-dots.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/_scss/style.css" />
+
+
+
+
+</head>
+<body class="container-fluid">
+<section class=" map fixe row ">
+    <div id="map"></div>
+</section>
+
+
+<section class="row consulting first top ">
+    <article class="col-xs-5 col-xs-offset-5">
+        <ul class="col-xs-5">
+            <li>
+                <a href="#" class="bg_fleche"><h3 class="bleu">Kontakts</h3>
+                    <img src="css/images/interface/cadre_fleche.svg" alt="cadre_bleu" class="">
+                </a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="info_bloc col-xs-12">
+            <h6 class="col-xs-5 col-xs-offset-1 left-align">Anschrift</h6>
+            <h6 class="col-xs-5 col-xs-offset-1 left-align">Ansprechpartner sales</h6>
+            <div class="clear"></div>
+            <p class="col-xs-5 col-xs-offset-1 left-align">eShot AG <br> Gneisenaustraße 66-67 <br>10961 Berlin<br>info@eshot-berlin.dk<br>+49 30 695 31 939</p>
+            <p class="col-xs-5 col-xs-offset-1 left-align">
+                Rafel Perez<br>+49 30 695 31 937</p>
+
+        </div>
+    </article>
+</section>
+
+
+<footer class="row">
+    <p class="col-lg-2 col-xs-2">©2016 eShot AG - All rights reserved</p>
+    <h2 class="col-lg-2 col-xs-2 col-lg-offset-6 col-xs-offset-6">Kontakt</h2>
+    <address class="col-lg-2 col-xs-2">
+        <ul >
+            <li><a href="https://www.xing.com/companies/eshotag"><img src="css/images/icones/xing_icon.svg" alt="xign_icon"></a></li>
+            <li><a href="https://www.facebook.com/EShotBerlin/"><img src="css/images/icones/fb_icon.svg" alt="facebook_icon"></a></li>
+            <li><a href="https://www.linkedin.com/company/5854622"><img src="css/images/icones/ln_icon.svg" alt="linkedin_icon"></a></li>
+            <li><a href="https://vimeo.com/productionpark"><img src="css/images/icones/vim_icon.svg" alt="vimeo_icon"></a></li>
+            <li><a href="https://twitter.com/Productionpark1"><img src="css/images/icones/tw_icon.svg" alt="twitter_icon"></a></li>
+            <li><a href="https://www.behance.net/productionpark"><img src="css/images/icones/be_icon.svg" alt=behance_icon""></a></li>
+        </ul>
+    </address>
+</footer>
+<script>
+    function initMap() {
+        var myLatLng = {lat: 52.4903396, lng: 13.4023383};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'E-Shot'
+        });
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+</body>
+</html>

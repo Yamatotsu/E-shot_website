@@ -1,0 +1,39 @@
+//  _menu.scss
+
+
+// generic transform
+@mixin transform ($transf){
+  -webkit-transform: ($transf);
+  -moz-transform: ($transf);
+  -ms-transform: ($transf);
+  -o-transform: ($transf);
+  transform: ($transf);
+}
+// translate 3D
+@mixin translate3d ($x,$y,$z) {
+  @include transform(translate3d($x,$y,$z));
+}
+
+@mixin box_shadow ($val,$color){
+  -webkit-box-shadow: inset 0 0 0 $val $color;
+  -moz-box-shadow: inset 0 0 0 $val $color;
+  box-shadow: inset 0 0 0 $val $color;
+}
+
+//transitions
+@mixin transition($transition,$time){
+  -webkit-transition: $transition $time;
+  -moz-transition: $transition $time;
+  -ms-transition: $transition $time;
+  -o-transition: $transition $time;
+  transition: $transition $time;
+}
+
+//smooth
+@mixin smooth_transition {
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
