@@ -5,8 +5,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-shot</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 
 
 
@@ -23,8 +21,7 @@
 </head>
 <body class="container-fluid pad">
 
-<!--section.row>header.col-lg-10.col-lg-offset-1.col-xs-10.col-xs-offset-1>(h3+p+ul>(li.col-lg-3>img.center-block+h4+p)*3)+main.col-lg-10.col-lg-offset-1.col-xs-10.col-xs-offset-1>ul>(li.col-lg-2.col-xs-6>img.center-block+h5)
--->
+<main id="main">
 <section class="slider fixe row">
     <ul>
         <li><img src="css/images/bg/eShot_Main1.jpg" alt=""></li>
@@ -34,49 +31,49 @@
 </section>
 
 
-<section class="row first rose_bg">
+<section class="row first rose_bg sceneElement"data-viewport="0">
     <header class="col-xs-12 center-block nav_bar">
         <nav>
             <ul class="col-xs-12">
                 <li class="col-xs-2">
-                    <a href="models.html" class="bg_fleche"><h3 class="bleu">Models</h3>
+                    <a href="models.html" class="bg_fleche" data-target="0"><h3 class="bleu">Models</h3>
                     <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
                 </li>
                 <li class="col-xs-2">
-                    <a href="kampagnen.html"><h3 class=" bleu">Kampagen</h3>
+                    <a href="kampagnen.html" data-target="1"><h3 class=" bleu">Kampagen</h3>
                     <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
                 </li>
                 <li class="col-xs-2">
-                    <a href="buste.html"><h3 class=" bleu">Büste</h3>
+                    <a href="buste.html" data-target="2"><h3 class=" bleu">Büste</h3>
                     <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
-                <li/>
+                </li>
                 <li class="col-xs-2">
-                    <a href="avatar.html"><h3 class=" bleu">Avatar</h3>
+                    <a href="avatar.html" data-target="3"><h3 class=" bleu">Avatar</h3>
                     <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
                 </li>
 
                 <li class="col-xs-2">
-                    <a href="produkt.html"><h3 class=" bleu">Produkt</h3>
+                    <a href="produkt.html" data-target="4"><h3 class=" bleu">Produkt</h3>
                     <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
                 </li>
                 <li class="col-xs-1">
-                    <a href="film.html"><h3 class=" bleu">Film</h3>
+                    <a href="film.html" data-target="5"><h3 class=" bleu">Film</h3>
                         <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
                 </li>
                 <li class="col-xs-1">
-                    <a href="cgi.html"><h3 class=" bleu">CGI</h3>
+                    <a href="cgi.html" data-target="6"><h3 class=" bleu">CGI</h3>
                         <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
                 </li>
@@ -98,20 +95,21 @@
 </section>
 <section class="row gallery">
     <ul class="col-xs-12">
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_1.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_2.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_3.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_4.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_5.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_6.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_7.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_8.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_9.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_10.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_11.jpg" alt=""></a></li>
-        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_12.jpg" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_1.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_2.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_3.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_4.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_5.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_6.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_7.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_8.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_9.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_10.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_11.png" alt=""></a></li>
+        <li class="col-lg-3"><a href=""><img src="pictures/model/modal_12.png" alt=""></a></li>
     </ul>
 </section>
+</main>
 
 <footer class="row">
     <p class="col-lg-2 col-xs-2">©2016 eShot AG - All rights reserved</p>
@@ -127,6 +125,13 @@
         </ul>
     </address>
 </footer>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>
 <script type="text/javascript" src="js/unslider-min.js"></script>
 <script src="js/script.js"></script>
 <script>
