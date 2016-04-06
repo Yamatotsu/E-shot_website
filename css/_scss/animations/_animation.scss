@@ -203,7 +203,7 @@ header{
   }
 }
 
-.sceneElement {
+.sceneElement,.unslider-active {
   -webkit-animation-duration: .4s;
   animation-duration: .4s;
   transition-timing-function: ease-in;
