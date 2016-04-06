@@ -15,8 +15,15 @@ a{
 a:hover{
   text-decoration: none;
   color: #000;
-
+}
+footer{
+  position: relative;
 }
 ul{
   padding:0;
+}
+footer{
+  p{
+    margin:0;
+  }
 }

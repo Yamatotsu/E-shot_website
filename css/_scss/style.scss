@@ -105,6 +105,12 @@ button.return:hover{
   @extend .text_indent;
 }
 
+.eshot_footer{
+  @extend .eshot;
+  position: absolute;
+  left:0;
+}
+
 /*----------------------Showcase*/
 /*Menu*/
 header.nav_bar{
@@ -332,7 +338,7 @@ section.common{
 }
 footer{
   background-color: #d1e4ee;
-  padding-top: 3rem;
+  padding-top: 4rem;
 
   address {
     ul {

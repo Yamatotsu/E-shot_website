@@ -182,14 +182,20 @@ a:hover {
   text-decoration: none;
   color: #000; }
 
+footer {
+  position: relative; }
+
 ul {
   padding: 0; }
+
+footer p {
+  margin: 0; }
 
 /*Common styles */
 body {
   background: #ffdbdb; }
 
-.text_indent, button.return, .button_menu, .eshot {
+.text_indent, button.return, .button_menu, .eshot, .eshot_footer {
   text-indent: -9999px;
   white-space: nowrap;
   overflow: hidden; }
@@ -282,7 +288,7 @@ button.return:hover {
   background-image: url(../images/interface/Menu_button_close.svg); }
 
 /*H1*/
-.eshot {
+.eshot, .eshot_footer {
   position: fixed;
   top: 0;
   right: 2rem;
@@ -293,6 +299,10 @@ button.return:hover {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 1rem; }
+
+.eshot_footer {
+  position: absolute;
+  left: 0; }
 
 /*----------------------Showcase*/
 /*Menu*/
@@ -477,7 +487,7 @@ section.common {
 
 footer {
   background-color: #d1e4ee;
-  padding-top: 3rem; }
+  padding-top: 4rem; }
   footer address ul li {
     display: inline-flex; }
     footer address ul li img {
