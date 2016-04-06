@@ -285,12 +285,14 @@ button.return:hover {
 .eshot {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 2rem;
   background-image: url(../images/interface/Logo.svg);
-  width: 51px;
-  height: 18px;
-  -webkit-background-size: cover;
-  background-size: cover; }
+  width: 6rem;
+  height: 6rem;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 1rem; }
 
 /*----------------------Showcase*/
 /*Menu*/
