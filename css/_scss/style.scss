@@ -16,12 +16,11 @@ body {
   overflow: hidden;
 }
 
-
 /*Header*/
 header.menu{
   top:0;
-  z-index:2;
-  position: relative;
+  z-index:99;
+  position: fixed;
   nav{
     ul{
       overflow: hidden;
@@ -95,15 +94,22 @@ button.return:hover{
 .eshot{
   position: fixed;
   top:0;
-  right:0;
-  background-image: url(../images/interface/e_sot_logo.png);
-  width: 51px;
-  height: 18px;
-  -webkit-background-size:cover;
-  background-size:cover;
+  right:2rem;
+  background-image: url(../images/interface/Logo.svg);
+  width:6rem;
+  height:6rem;
+  -webkit-background-size:contain;
+  background-size:contain;
+  background-repeat:no-repeat;
+  margin-top:1rem;
   @extend .text_indent;
 }
 
+.eshot_footer{
+  @extend .eshot;
+  position: absolute;
+  left:0;
+}
 
 /*----------------------Showcase*/
 /*Menu*/
@@ -158,14 +164,21 @@ section.gallery{
     li{
       padding:2rem;
       img{
+        position: relative;
+        z-index:2;
         width:15rem;
         height:auto;
-        border:white solid 2rem;
-        -webkit-box-shadow: inset 0 0 0 10px #ffdbdb;
-        -moz-box-shadow: inset 0 0 0 10px #ffdbdb;
-        box-shadow: inset 0 0 0 100px #ffdbdb;
+        padding:2rem;
+        -webkit-box-shadow: inset 0 0 1rem 1px darken($rose,5);
+        -moz-box-shadow: inset 0 0 1rem 1px darken($rose,5);
+        box-shadow: inset 0 0 1rem 1px darken($rose,5);
         @include transition(all,0.3s);
         }
+      img:hover{
+        -webkit-box-shadow: inset 0 0 0 3rem darken($rose,10);
+        -moz-box-shadow: inset 0 0 0 3rem darken($rose,10);
+        box-shadow: inset 0 0 0 3rem darken($rose,10);
+      }
         }
       }
 }
@@ -318,7 +331,19 @@ section.common{
   top:0;
   left:0;
 }
+.impressum{
+  @extend .map;
+  background-image: url(../images/bg/about/about_bg_2.jpg);
+  width:100vw;
+  height:100%;
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.agb{
+  @extend .impressum;
+  background-image: url(../images/bg/about/about_bg_3.jpg);
 
+}
 #map{
   height: 100vh;
   max-height: 100%;
@@ -332,7 +357,7 @@ section.common{
 }
 footer{
   background-color: #d1e4ee;
-  padding-top: 3rem;
+  padding-top: 4rem;
 
   address {
     ul {
@@ -348,6 +373,51 @@ footer{
     }
   }
 }
+.map_bottom{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100vw;
+}
+.pic{
+  width:40%;
+}
+.pics{
+  margin-left:7rem;
+  margin-right:7rem;
+  padding-right:2rem;
+  padding-left:2rem;
+  padding-bottom:2rem;
+}
 
+.over_slide{
+  position: absolute;
+  top:13vw;
+  left:49%;
+  width:34%;
+  ul{
+    margin-bottom:0;
+  }
+}
+.over_impressum{
+  position: absolute;
+  top:13vw;
+  left:25%;
+  width:44%;
+  ul{
+    margin-bottom:0;
+  }
+}
+.over_agb{
+    position: absolute;
+    top:18vw;
+    left:32%;
+    width:30%;
+  ul{
+    margin-bottom:0;
+  }
+}
 
-
+.navbar-fixed-top{
+  z-index:99;
+}

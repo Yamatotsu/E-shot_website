@@ -37,6 +37,133 @@ header {
   header img.fleche {
     z-index: 1; }
 
+/*slides*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@-webkit-keyframes moveOutToLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+@keyframes moveOutToLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+@-webkit-keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@-webkit-keyframes moveOutToRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%); } }
+@keyframes moveOutToRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%); } }
+.sceneElement, .unslider-active {
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.is-exiting .sceneElement {
+  transition-timing-function: ease-out; }
+
+#main[data-transition=fade] .sceneElement {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+#main[data-transition=fade] .is-exiting .sceneElement {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+#main[data-transition=moveleft] .sceneElement {
+  -webkit-animation-name: moveInFromLeft;
+  animation-name: moveInFromLeft; }
+
+#main[data-transition=moveleft].is-exiting .sceneElement {
+  -webkit-animation-name: moveOutToRight;
+  animation-name: moveOutToRight; }
+
+#main[data-transition=moveright] .sceneElement {
+  -webkit-animation-name: moveInFromRight;
+  animation-name: moveInFromRight; }
+
+#main[data-transition=moveright].is-exiting .sceneElement {
+  -webkit-animation-name: moveOutToLeft;
+  animation-name: moveOutToLeft; }
+
 li {
   list-style: none; }
 
@@ -55,14 +182,20 @@ a:hover {
   text-decoration: none;
   color: #000; }
 
+footer {
+  position: relative; }
+
 ul {
   padding: 0; }
+
+footer p {
+  margin: 0; }
 
 /*Common styles */
 body {
   background: #ffdbdb; }
 
-.text_indent, button.return, .button_menu, .eshot {
+.text_indent, button.return, .button_menu, .eshot, .eshot_footer {
   text-indent: -9999px;
   white-space: nowrap;
   overflow: hidden; }
@@ -70,8 +203,8 @@ body {
 /*Header*/
 header.menu {
   top: 0;
-  z-index: 2;
-  position: relative; }
+  z-index: 99;
+  position: fixed; }
   header.menu nav ul {
     overflow: hidden;
     background-color: #ffdbdb;
@@ -155,15 +288,21 @@ button.return:hover {
   background-image: url(../images/interface/Menu_button_close.svg); }
 
 /*H1*/
-.eshot {
+.eshot, .eshot_footer {
   position: fixed;
   top: 0;
-  right: 0;
-  background-image: url(../images/interface/e_sot_logo.png);
-  width: 51px;
-  height: 18px;
-  -webkit-background-size: cover;
-  background-size: cover; }
+  right: 2rem;
+  background-image: url(../images/interface/Logo.svg);
+  width: 6rem;
+  height: 6rem;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 1rem; }
+
+.eshot_footer {
+  position: absolute;
+  left: 0; }
 
 /*----------------------Showcase*/
 /*Menu*/
@@ -221,17 +360,23 @@ section.gallery {
     section.gallery ul li {
       padding: 2rem; }
       section.gallery ul li img {
+        position: relative;
+        z-index: 2;
         width: 15rem;
         height: auto;
-        border: white solid 2rem;
-        -webkit-box-shadow: inset 0 0 0 10px #ffdbdb;
-        -moz-box-shadow: inset 0 0 0 10px #ffdbdb;
-        box-shadow: inset 0 0 0 100px #ffdbdb;
+        padding: 2rem;
+        -webkit-box-shadow: inset 0 0 1rem 1px #ffc2c2;
+        -moz-box-shadow: inset 0 0 1rem 1px #ffc2c2;
+        box-shadow: inset 0 0 1rem 1px #ffc2c2;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s; }
+      section.gallery ul li img:hover {
+        -webkit-box-shadow: inset 0 0 0 3rem #ffa8a8;
+        -moz-box-shadow: inset 0 0 0 3rem #ffa8a8;
+        box-shadow: inset 0 0 0 3rem #ffa8a8; }
 
 /*----------------------Consulting*/
 /*Consutling*/
@@ -331,11 +476,21 @@ section.common {
 .pad {
   padding-top: 100vh; }
 
-.map {
+.map, .impressum, .agb {
   z-index: -3;
   position: absolute;
   top: 0;
   left: 0; }
+
+.impressum, .agb {
+  background-image: url(../images/bg/about/about_bg_2.jpg);
+  width: 100vw;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.agb {
+  background-image: url(../images/bg/about/about_bg_3.jpg); }
 
 #map {
   height: 100vh;
@@ -348,11 +503,54 @@ section.common {
 
 footer {
   background-color: #d1e4ee;
-  padding-top: 3rem; }
+  padding-top: 4rem; }
   footer address ul li {
     display: inline-flex; }
     footer address ul li img {
       width: 1.5rem;
       height: 1.5rem; }
+
+.map_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw; }
+
+.pic {
+  width: 40%; }
+
+.pics {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem; }
+
+.over_slide {
+  position: absolute;
+  top: 13vw;
+  left: 49%;
+  width: 34%; }
+  .over_slide ul {
+    margin-bottom: 0; }
+
+.over_impressum {
+  position: absolute;
+  top: 13vw;
+  left: 25%;
+  width: 44%; }
+  .over_impressum ul {
+    margin-bottom: 0; }
+
+.over_agb {
+  position: absolute;
+  top: 18vw;
+  left: 32%;
+  width: 30%; }
+  .over_agb ul {
+    margin-bottom: 0; }
+
+.navbar-fixed-top {
+  z-index: 99; }
 
 /*# sourceMappingURL=style.css.map */
