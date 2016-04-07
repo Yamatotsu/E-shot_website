@@ -191,6 +191,17 @@ ul {
 footer p {
   margin: 0; }
 
+/*Import fonts*/
+.off, .font_slide, .subtitle {
+  position: absolute;
+  top: 15vw;
+  left: 40vw;
+  z-index: 99;
+  color: #ff8f8f; }
+
+.subtitle {
+  top: 20vw; }
+
 /*Common styles */
 body {
   background: #ffdbdb; }
@@ -417,6 +428,14 @@ article {
 .fixe {
   position: absolute;
   top: 0; }
+
+.illustr {
+  width: 17rem;
+  height: 15rem; }
+
+.illustr + h4, .illustr + h4 + p {
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
 section.slider {
   z-index: -1;
