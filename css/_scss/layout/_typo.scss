@@ -1,0 +1,17 @@
+/*Import fonts*/
+
+
+.off {
+  position: absolute;
+  top:15vw;
+  left:40vw;
+  z-index:99;
+  color: darken($rose,15);
+}
+.font_slide{
+  @extend .off
+}
+.subtitle{
+  @extend .off;
+  top:20vw;
+}

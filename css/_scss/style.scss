@@ -4,6 +4,8 @@
 @import "animations/menue";
 @import "animations/animation";
 @import "layout/_reset";
+@import "layout/_typo";
+
 
 
 /*Common styles */
@@ -236,7 +238,14 @@ article{
   position: absolute;
   top:0;
 }
-
+.illustr{
+  width:17rem;
+  height:15rem;
+}
+.illustr+h4,.illustr+h4+p{
+  padding-left:3rem;
+  padding-right:3rem;
+}
 
 section.slider{
   z-index:-1;
