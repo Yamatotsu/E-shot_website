@@ -11,6 +11,11 @@ $(document).ready(function() {
         })
         $('.return').on('click', function () {
             $('ul.menu').toggleClass('show');
+            $('.button_menu').toggleClass('click');
+        })
+        $('button.job').on('click', function () {
+            $('button.job').removeClass('selected');
+            $(this).addClass('selected');
         })
     })();
     

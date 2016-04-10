@@ -572,4 +572,55 @@ footer {
 .navbar-fixed-top {
   z-index: 99; }
 
+ul.job_list {
+  margin-top: 2rem;
+  padding-left: 4rem; }
+  ul.job_list li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
+    ul.job_list li button.job {
+      margin: 1rem;
+      text-align: center;
+      padding: 0.7rem;
+      border-radius: 0.1rem;
+      -webkit-box-shadow: inset 0px 0px 0px 3px #4f72aa;
+      -moz-box-shadow: inset 0px 0px 0px 3px #4f72aa;
+      box-shadow: inset 0px 0px 0px 3px #4f72aa;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+    ul.job_list li button.job:hover, ul.job_list li button.selected {
+      color: #fff;
+      -webkit-box-shadow: inset 0px 0px 0px 50px #4f72aa;
+      -moz-box-shadow: inset 0px 0px 0px 50px #4f72aa;
+      box-shadow: inset 0px 0px 0px 50px #4f72aa; }
+    ul.job_list li a.mailto {
+      text-transform: uppercase;
+      color: #000, !important;
+      position: relative; }
+    ul.job_list li a.mailto:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 2px;
+      height: 10px;
+      background-color: black; }
+
+article.job_description {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 5rem; }
+  article.job_description ul {
+    margin-left: 6%; }
+
 /*# sourceMappingURL=style.css.map */
