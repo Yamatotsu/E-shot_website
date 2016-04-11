@@ -1,3 +1,10 @@
+//<![CDATA[
+$(window).load(function() { // makes sure the whole site is loaded
+    $('#status').fadeOut(); // will first fade out the loading animation
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    $('body').delay(350).css({'overflow':'visible'});
+});
+//]]>
 
 
 $(document).ready(function() {
@@ -6,65 +13,37 @@ $(document).ready(function() {
     (function () {
         $('.button_menu').on('click', function () {
             $('ul.menu').toggleClass('show');
-            $('.button_menu').toggleClass('click');
+            $('svg.mn').toggleClass('menu_trigger');
 
         })
         $('.return').on('click', function () {
             $('ul.menu').toggleClass('show');
-            $('.button_menu').toggleClass('click');
+            $('svg.mn').toggleClass('menu_trigger');
         })
         $('button.job').on('click', function () {
             $('button.job').removeClass('selected');
             $(this).addClass('selected');
         })
     })();
-    
-  /*
-    (function ($) {
 
-        'use strict';
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
 
-        $(document).ready(function () {
 
-            // Init here.
-            var $body = $('body'),
-                $main = $('#main'),
-                $site = $('html, body'),
-                transition = 'fade',
-                smoothState;
-
-            smoothState = $main.smoothState({
-                onBefore: function($anchor, $container) {
-                    var current = $('[data-viewport]').first().data('viewport'),
-                        target = $anchor.data('target');
-                    current = current ? current : 0;
-                    target = target ? target : 0;
-                    if (current === target) {
-                        transition = 'fade';
-                    } else if (current < target) {
-                        transition = 'moveright';
-                    } else {
-                        transition = 'moveleft';
-                    }
-                },
-                onStart: {
-                    duration: 400,
-                    render: function (url, $container) {
-                        $main.attr('data-transition', transition);
-                        $main.addClass('is-exiting');
-                    }
-                },
-                onReady: {
-                    duration: 0,
-                    render: function ($container, $newContent) {
-                        $container.html($newContent);
-                        $container.removeClass('is-exiting');
-                    }
-                },
-            }).data('smoothState');
-
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 800);
+                    return false;
+                }
+            }
         });
-
-    }(jQuery));
-*/
+    });
 });
+
