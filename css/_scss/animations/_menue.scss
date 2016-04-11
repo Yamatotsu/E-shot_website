@@ -9,9 +9,14 @@
   -o-transform: ($transf);
   transform: ($transf);
 }
+
 // translate 3D
 @mixin translate3d ($x,$y,$z) {
   @include transform(translate3d($x,$y,$z));
+}
+
+@mixin rotateZ ($z){
+  @include transform(rotateZ($z));
 }
 
 @mixin box_shadow ($val,$color){
@@ -36,4 +41,104 @@
   -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+
+.animate-in {
+  -webkit-animation: scaled .5s ;
+  animation: scaled .5s ;
+   @include smooth_transition;
+}
+
+.animate-out {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes scaled {
+  from {
+    opacity: 0;
+    @include translate3d (-100%,0,0);
+  }
+  to {
+    opacity: 1;
+    @include translate3d (0,0,0);
+  }
+}
+
+@keyframes scaled {
+  from {
+    opacity: 0;
+    @include translate3d (-100%,0,0);
+  }
+  to {
+    opacity: 1;
+    @include translate3d (0,0,0);
+  }
+}
+
+
+svg.menu_trigger{
+  path:nth-of-type(1){
+    -webkit-transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
+    -moz-transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
+    -ms-transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
+    -o-transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
+    transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
+    transition: all 1s;
+    @include smooth_transition;
+    fill: #fff;
+  }
+  path:nth-of-type(3){
+    -webkit-transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
+    -moz-transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
+    -ms-transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
+    -o-transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
+    transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
+    transition: all 1s;
+    @include smooth_transition;
+    fill: #fff;
+  }
+  path:nth-of-type(2){
+    -webkit-transform: rotateY(-110deg) ;
+    -moz-transform: rotateY(-110deg) ;
+    -ms-transform: rotateY(-110deg) ;
+    -o-transform: rotateY(-110deg) ;
+    transform: rotateY(-110deg) ;
+    transition: all 1s;
+    @include smooth_transition;
+    fill: #fff;
+  }
+}
+
+
+svg{
+  path:nth-of-type(1){
+    -webkit-transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
+    -moz-transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
+    -ms-transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
+    -o-transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
+    transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
+    transition: all 1s;
+    @include smooth_transition;
+  }
+  path:nth-of-type(3){
+    -webkit-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
+    -moz-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
+    -ms-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
+    -o-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
+    transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
+    transition: all 1s;
+    @include smooth_transition;
+  }
+  path:nth-of-type(2){
+    -webkit-transform: rotateY(0deg) ;
+    -moz-transform: rotateY(0deg) ;
+    -ms-transform: rotateY(0deg) ;
+    -o-transform: rotateY(0deg) ;
+    transform: rotateY(0deg) ;
+    transition: all 1s;
+    @include smooth_transition;
+  }
 }

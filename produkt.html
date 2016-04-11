@@ -5,31 +5,30 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produkt</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-
-
-
-
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/unslider.css" />
     <link rel="stylesheet" href="css/unslider-dots.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/_scss/style.css" />
-
-
-
-
 </head>
-<body class="container-fluid pad">
+<body class="container-fluid pad animate-in">
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">
+        <img src="css/images/interface/logo_loading.svg" alt="e-shot_logo_loading">
+        <p>loading</p>
+    </div>
+</div>
+
 <header class="row navbar-fixed-top menu">
     <nav class="col-lg-4">
         <ul class=" menu col-lg-10">
-            <li><h2>About</h2></li>
+            <li><a href="about.html"><h2>About</h2></a></li>
             <li><a href="about.html#what_we_do">What we do</a></li>
             <li><a href="about.html#who_we_are">Who we are</a></li>
             <li><a href="about.html#referenzen">Referenzen</a></li>
-            <li><h2>Showcase</h2></li>
+            <li><a href="models.html"><h2>Showcase</h2></a></li>
             <li><a href="models.html">Model</a></li>
             <li><a href="kampagnen.html">Kampagnen</a></li>
             <li><a href="buste.html">Büste</a></li>
@@ -37,24 +36,34 @@
             <li><a href="film.html">Film</a></li>
             <li><a href="produkt.html">Produkt/Still</a></li>
             <li><a href="cgi.html">CGI</a></li>
-            <li><h2>Consulting</h2></li>
+            <li><a href="consulting.html"><h2>Consulting</h2></a></li>
             <li><a href="consulting.html">Case study</a></li>
-            <li><h2>Kontakt</h2></li>
+            <li><a href="kontakt.html"><h2>Kontakt</h2></a></li>
             <li><a href="karriere.html">Karriere</a></li>
             <li><a href="agb.html">Agb</a></li>
             <li><a href="impressum.html">Impressum</a></li>
             <li class="col-lg-2 back"><button class="return">
+                <img src="css/images/interface/return_arrow.svg" alt="return_arrow">
             </button></li>
         </ul>
-        <button class="col-lg-1 button_menu navbar-fixed-top">Menu</button>
+        <button class="col-lg-1 button_menu navbar-fixed-top">
+            <svg class="mn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 19.6"><title>Menu_button</title>
+                <path class="menu_top" d="M25.4,3.9H0.6A0.67,0.67,0,0,1,0,3.2V0.6A0.65,0.65,0,0,1,.6,0H25.3a0.67,0.67,0,0,1,.7.6V3.2A0.67,0.67,0,0,1,25.4,3.9Z"/>
+                <path class="menu_middle" d="M25.4,11.8H0.6A0.58,0.58,0,0,1,0,11.2V8.5A0.58,0.58,0,0,1,.6,7.9H25.3a0.58,0.58,0,0,1,.6.6v2.6A0.54,0.54,0,0,1,25.4,11.8Z"/>
+                <path class="menu_bottom" d="M25.4,19.6H0.6A0.65,0.65,0,0,1,0,19V16.4a0.58,0.58,0,0,1,.6-0.6H25.3a0.58,0.58,0,0,1,.6.6V19A0.5,0.5,0,0,1,25.4,19.6Z"/>
+            </svg>
+        </button>
     </nav>
-    <h1 class="eshot"><a href="index.html">E-Shot</a></h1>
+    <a href="index.html"><h1 class="eshot">E-Shot</h1></a>
 </header>
 
 <section class="slider fixe row">
     <ul>
+        <li><img src="css/images/bg/showcase/produkt/Produkt%20eshot%2001.jpg" alt="eshot_produkt"></li>
+        <li><img src="css/images/bg/showcase/produkt/Produkt%20eshot%2002.jpg" alt="eshot_produkt"></li>
+        <li><img src="css/images/bg/showcase/produkt/Produkt%20eshot%2003.jpg" alt="eshot_produkt"></li>
+        <li><img src="css/images/bg/showcase/produkt/Produkt%20eshot%2004.jpg" alt="eshot_produkt"></li>
 
-        <li><img src="css/images/bg/eShot_Main7.jpg" alt=""></li>
     </ul>
 </section>
 
@@ -63,34 +72,34 @@
     <header class="col-xs-12 center-block nav_bar">
         <nav>
             <ul class="col-xs-12">
-                <li class="col-xs-2">
-                    <a href="models.html" class=><h3 class="bleu">Models</h3>
-                    <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
-                    </a>
 
+                <li class="col-xs-2 ">
+                    <a href="models.html" class=""><h3 class="bleu">Models</h3>
+                        <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
+                    </a>
                 </li>
                 <li class="col-xs-2">
-                    <a href="kampagnen.html" ><h3 class=" bleu">Kampagen</h3>
-                    <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
+                    <a href="kampagnen.html" class=""><h3 class=" bleu">Kampagen</h3>
+                        <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
-
                 </li>
-                <li class="col-xs-2">
-                    <a href="buste.html" ><h3 class=" bleu">Büste</h3>
-                    <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
-                    </a>
 
-                <li/>
+                <li class="col-xs-2">
+                    <a href="buste.html"><h3 class=" bleu">Büste</h3>
+                        <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
+                    </a>
+                </li>
+
                 <li class="col-xs-2">
                     <a href="avatar.html"><h3 class=" bleu">Avatar</h3>
-                    <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
+                        <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
-
                 </li>
 
+
                 <li class="col-xs-2">
-                    <a href="produkt.html" class="bg_fleche"><h3 class=" bleu">Produkt/Still</h3>
-                    <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
+                    <a href="produkt.html" class="bg_fleche"><h3 class=" bleu">Produkt</h3>
+                        <img src="css/images/interface/cadre_fleche_rose.svg" alt="cadre_bleu" class="">
                     </a>
 
                 </li>
@@ -106,7 +115,6 @@
                     </a>
                 </li>
             </ul>
-
         </nav>
 
         <div class="clear"></div>
@@ -128,8 +136,8 @@
 
 <footer class="row">
     <a class="eshot_footer" href="index.html">E-Shot</a>
-    <p class="col-lg-2 col-xs-2">©2016 eShot AG - All rights reserved</p>
-    <h2 class="col-lg-2 col-xs-2 col-lg-offset-6 col-xs-offset-6">Kontakt</h2>
+    <p class="col-lg-4 col-xs-2">©2016 eShot AG - All rights reserved</p>
+    <h2 class="col-lg-2 col-xs-2 col-lg-offset-4 col-xs-offset-4"><a href="kontakt.html">Kontakt</a></h2>
     <address class="col-lg-2 col-xs-2">
         <ul >
             <li><a href="https://www.xing.com/companies/eshotag"><img src="css/images/icones/xing_icon.svg" alt="xign_icon"></a></li>
@@ -141,12 +149,14 @@
         </ul>
     </address>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/unslider-min.js"></script>
+
 <script src="js/script.js"></script>
 <script>
     jQuery(document).ready(function($) {
         $('.slider').unslider({
-            animation: 'horizontal', autoplay: true, arrows: false
+            animation: 'horizontal', autoplay: true, arrows: false, infinite: true
         });
     });
 </script>
