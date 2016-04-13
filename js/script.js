@@ -15,14 +15,17 @@ $(document).ready(function() {
             $('ul.menu').toggleClass('show');
             $('svg.mn').toggleClass('menu_trigger');
 
-        })
+        });
         $('.return').on('click', function () {
             $('ul.menu').toggleClass('show');
             $('svg.mn').toggleClass('menu_trigger');
-        })
+        });
         $('button.job').on('click', function () {
             $('button.job').removeClass('selected');
             $(this).addClass('selected');
+        });
+        $('section.gallery>ul li').on('click', function () {
+            $(this).addClass('flex_extend');
         })
     })();
 
