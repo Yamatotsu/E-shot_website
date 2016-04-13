@@ -5,6 +5,7 @@
 @import "animations/animation";
 @import "layout/_reset";
 @import "layout/_typo";
+@import "smallscreen";
 
 
 #preloader {
@@ -211,6 +212,7 @@ section.gallery{
 }
 
 
+
 /*----------------------Consulting*/
 /*Consutling*/
 section.consulting{
@@ -272,7 +274,7 @@ article{
   padding-right:3rem;
 }
 
-section.slider{
+.slider{
   z-index:-1;
   height: 100vh;
   max-height: 100%;
@@ -286,11 +288,10 @@ section.slider{
     padding:0;
     img,video{
       max-width: 100%;
+      height:100%;
       width:100vw;
-      height: auto;
       display: block;
   }
-
   }
 }
 

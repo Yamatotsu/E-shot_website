@@ -122,7 +122,7 @@
 
 
             <div class="clear"></div>
-        <p class="col-xs-6 col-xs-offset-4">Mit unserer Tochterfirma Productionpark GmbH & Co. KG als Full-Service Agentur für hochwertige
+        <p class="col-xs-6 col-xs-offset-4 left-align">Mit unserer Tochterfirma Productionpark GmbH & Co. KG als Full-Service Agentur für hochwertige
             Fotoproduktionen in den Bereichen Werbung, People, Editorial und Fashion bieten wir von
             der Konzeption, über das Projektmanagement bis zur Bildbearbeitung ein besonders effizientes
             Inhouse-Paket für unsere Kunden. Dank zentraler Koordination aller Prozesse und international
@@ -158,15 +158,27 @@
         </ul>
     </address>
 </footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+<script type="text/javascript" src="js/jquery.event.move.js"></script>
 <script type="text/javascript" src="js/unslider-min.js"></script>
 <script src="js/script.js"></script>
 <script>
     jQuery(document).ready(function($) {
         $('.slider').unslider({
-            animation: 'horizontal', autoplay: true, arrows: false, infinite: true
+            animation: 'fade', autoplay: true, speed:900, arrows: false, animateHeight: true, infinite: true
         });
+        var slides = $('.slider'),
+                i = 0;
+
+        slides
+                .on('swipeleft', function(e) {
+                    unslider.prev();
+                })
+                .on('swiperight', function(e) {
+                    unslider.next();
+                });
     });
 </script>
 </body>

@@ -57,19 +57,17 @@
     <a href="index.html"><h1 class="eshot">E-Shot</h1></a>
 </header>
 <section class="slider fixe row">
+    <h2 class="font_slide">Zusammen noch besser.</h2>
+    <p class="subtitle">Entdecke die eShot Firmengruppe</p>
     <ul>
-        <li>
-            <h2 class="font_slide">Zusammen noch besser.</h2>
-            <p class="subtitle">Entdecke die eShot Firmengruppe</p>
-            <img src="css/images/bg/about/about_bg_2.jpg" alt="">
-        </li>
         <li><img src="css/images/bg/eShot_Main2.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main4.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main6.jpg" alt=""></li>
+        <li><img src="css/images/bg/001.jpg" alt=""></li>
+        <li><img src="css/images/bg/eShot_Main5.jpg" alt=""></li>
         <li><img src="css/images/bg/eShot_Main3.jpg" alt=""></li>
         <li><img src="css/images/bg/eShot_Main8.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main9.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main10.jpg" alt=""></li>
+
+
+
 
 
 
@@ -79,15 +77,43 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<script src="https://use.typekit.net/fkj6dbo.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script type="text/javascript" src="js/jquery.event.move.js"></script>
+<script type="text/javascript" src="js/jquery.event.swipe.js"></script>
 <script type="text/javascript" src="js/unslider-min.js"></script>
+<script src="js/script.js"></script>
 <script>
-    jQuery(document).ready(function($) {
-        $('.slider').unslider({
-            animation: 'vertical', autoplay: true, arrows: false, infinite: true
-        });
+    $(document).ready(function(){
+
+        var unslider = jQuery('.slider').unslider({
+                    speed: 500,
+                    delay: 3000,
+                    dots: true,
+                    arrows: false,
+                    autoplay: true,
+                    infinite: true,
+                    animation: 'horizontal'
+                }),
+                data = unslider.data('unslider');
+
+        var slides = jQuery('.slider'),
+                i = 0;
+
+        slides
+                .on('swipeleft', function(e) {
+                    data.prev();
+                })
+                .on('swiperight', function(e) {
+                    data.next();
+                })
+                .on('movestart', function(e) {
+                    // disable swipe up/down to allow for normal scrolling
+                    if ((e.distX > e.distY && e.distX < -e.distY) ||
+                            (e.distX < e.distY && e.distX > -e.distY)) {
+                        e.preventDefault();
+                    }
+                });
+
     });
 </script>
 </body>

@@ -198,6 +198,23 @@ header {
 .subtitle {
   top: 20vw; }
 
+@media screen and (max-width: 640px) {
+  .slider {
+    z-index: -1;
+    height: 100vh;
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%; }
+    .slider ul {
+      margin: 0; }
+    .slider li {
+      margin: 0;
+      padding: 0; }
+      .slider li img, .slider li video {
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        display: block; } }
 #preloader {
   position: fixed;
   left: 0px;
@@ -461,21 +478,21 @@ article {
   padding-left: 3rem;
   padding-right: 3rem; }
 
-section.slider {
+.slider {
   z-index: -1;
   height: 100vh;
   max-height: 100%;
   width: 100vw;
   max-width: 100%; }
-  section.slider ul {
+  .slider ul {
     margin: 0; }
-  section.slider li {
+  .slider li {
     margin: 0;
     padding: 0; }
-    section.slider li img, section.slider li video {
+    .slider li img, .slider li video {
       max-width: 100%;
+      height: 100%;
       width: 100vw;
-      height: auto;
       display: block; }
 
 section > header > p:first-of-type {
