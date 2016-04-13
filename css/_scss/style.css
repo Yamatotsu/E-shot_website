@@ -296,11 +296,8 @@ header.menu {
     header.menu nav li h2 {
       margin-top: 2rem;
       text-transform: uppercase;
-      font-family: "acumin-pro",sans-serif;
       font-weight: bold;
       font-size: 1.5rem; }
-    header.menu nav li a {
-      font-family: "nimbus-roman",sans-serif; }
 
 .back {
   position: absolute;
