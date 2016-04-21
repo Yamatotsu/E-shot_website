@@ -188,17 +188,116 @@ header {
   position: relative; }
 
 /*Import fonts*/
-.off, .font_slide, .subtitle {
+.mehr {
+  line-height: 2rem;
+  font-style: italic; }
+
+.citate {
   position: absolute;
   top: 15vw;
-  left: 40vw;
-  z-index: 99;
-  color: #ff8f8f; }
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  color: #ff8f8f;
+  white-space: nowrap; }
+
+.blue {
+  color: #4f72aa; }
+
+.rose {
+  color: #ffdbdb; }
+
+.font_slide {
+  text-align: center;
+  font-size: 5.8vw; }
 
 .subtitle {
-  top: 20vw; }
+  text-align: center;
+  font-size: 3vw;
+  color: #4f72aa; }
 
-@media screen and (max-width: 640px) {
+p {
+  font-family: "acumin-pro",sans-serif; }
+
+.italic {
+  font-style: italic; }
+
+.bold, .font_slide, h3, h4, h5, h2 > a, a > h2, h6, #preloader p, header.menu nav ul li:nth-of-type(16), header.menu nav ul li:nth-of-type(17), header.menu nav ul li:nth-of-type(18) {
+  font-family: "acumin-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+h3 {
+  padding-top: 0.2rem;
+  margin-bottom: 0; }
+
+h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem; }
+
+h4 > span {
+  color: #4f72aa; }
+
+h5 {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+/*footer kontakt*/
+h2 > a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: -13px; }
+
+h6 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1.5rem; }
+
+.nimbus, .subtitle, header.menu nav li a {
+  font-family: "nimbus-roman",serif;
+  font-style: italic; }
+
+body section header p.exergue {
+  font-size: 1.5rem; }
+
+@media screen and (max-width: 380px) {
+  body > section > header > p:first-of-type {
+    text-align: justify;
+    text-justify: inter-word;
+    z-index: 3;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 5vw; }
+
+  body section.consulting img.side {
+    display: none; }
+  body section.consulting p {
+    font-size: 5vw; }
+  body section.consulting h6 {
+    margin-bottom: 4vw;
+    font-size: 6vw; }
+  body section.consulting a {
+    color: #fff; }
+    body section.consulting a img {
+      display: none; }
+    body section.consulting a h3 {
+      font-size: 10vw;
+      color: #4f72aa; }
+  body section.consulting li, body section.consulting a, body section.consulting ul {
+    padding: 0; } }
+@media screen and (max-width: 786px) {
+  .hidem, .subtitle, section header.nav_bar nav ul li a {
+    display: none;
+    font-size: 0;
+    max-height: 0;
+    line-height: 0;
+    padding: 0; }
+
   .slider {
     z-index: -1;
     height: 100vh;
@@ -210,15 +309,141 @@ header {
     .slider li {
       margin: 0;
       padding: 0; }
-      .slider li img, .slider li video {
-        max-width: 100%;
-        height: 100%;
-        width: 100%;
-        display: block; } }
+
+  h3 {
+    font-size: 6vw; }
+
+  /*menu*/
+  body header.menu nav ul {
+    padding-left: 2rem; }
+
+  /*Footer*/
+  .eshot_footer {
+    left: 50%; }
+
+  /*About*/
+  ul.pics {
+    margin: 0;
+    padding: 0; }
+
+  .pic {
+    width: 80%; }
+
+  h5 {
+    font-size: 0.9rem; }
+
+  img.fleche, h3.center {
+    width: 54%;
+    top: -25vw; }
+
+  .exergue {
+    font-size: 1rem; }
+
+  .position_h3, h3.center, img.fleche {
+    animation: none; }
+
+  img.illustr {
+    width: 14rem;
+    height: 12rem; }
+
+  img.illustr + h4, img.illustr + h4 + p {
+    padding-left: 0;
+    padding-right: 0; }
+
+  h4 {
+    font-size: 1rem; }
+
+  /*Agb*/
+  div.info_bloc {
+    width: 100%;
+    font-size: 1.2rem; }
+
+  article.over_agb, article.over_impressum {
+    position: absolute;
+    top: 29vw;
+    left: 0;
+    width: 100%; }
+    article.over_agb ul, article.over_impressum ul {
+      margin-bottom: 0; }
+
+  /*Consulting*/
+  h3.bleu + img {
+    width: 50%; }
+
+  img.side {
+    width: 50vw; }
+
+  img.side + h6 {
+    margin-top: 55vw; }
+
+  .over_impressum {
+    font-size: 1rem;
+    top: 20vw;
+    left: 0;
+    width: 50%;
+    /*Map*/ }
+    .over_impressum #map {
+      display: none; }
+
+  .citate {
+    top: 50vw; }
+
+  .font_slide {
+    font-size: 15vw;
+    float: none; }
+
+  br.rwd-break {
+    display: block; }
+
+  body section.consulting a {
+    color: #fff; }
+    body section.consulting a img {
+      display: none; }
+    body section.consulting a h3 {
+      font-size: 10vw;
+      color: #4f72aa; }
+  body section.consulting li, body section.consulting a, body section.consulting ul {
+    padding: 0; }
+
+  /*Header nav_bar*/
+  section header.nav_bar {
+    margin: 0;
+    padding: 0; }
+    section header.nav_bar nav {
+      margin: 0;
+      position: relative; }
+      section header.nav_bar nav ul {
+        padding-bottom: 0;
+        margin: 0;
+        background-color: inherit; }
+        section header.nav_bar nav ul li {
+          position: absolute;
+          padding: 0;
+          margin: 0; }
+          section header.nav_bar nav ul li a {
+            margin-right: 40%;
+            margin-left: 40%; }
+            section header.nav_bar nav ul li a img {
+              display: none; }
+            section header.nav_bar nav ul li a h3 {
+              z-index: 1;
+              font-size: 16vw;
+              margin: auto;
+              color: #ff8f8f;
+              white-space: normal; }
+      section header.nav_bar nav a.bg_fleche {
+        position: absolute;
+        top: -12rem;
+        left: -1rem;
+        z-index: 5;
+        display: block;
+        color: #fff; }
+        section header.nav_bar nav a.bg_fleche img {
+          display: none; } }
 #preloader {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -236,6 +461,9 @@ header {
   /* centers the loading animation vertically one the screen */ }
 
 /*Common styles */
+.rwd-break {
+  display: none; }
+
 body {
   overflow: hidden;
   background: #ffdbdb; }
@@ -257,7 +485,7 @@ header.menu {
     right: 0;
     left: 0;
     height: 100vh;
-    padding-left: 2rem;
+    padding-left: 8rem;
     padding-top: 7rem;
     margin-bottom: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -275,6 +503,20 @@ header.menu {
     -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+    header.menu nav ul li:nth-of-type(1) {
+      padding-left: 0; }
+    header.menu nav ul li:nth-of-type(5) {
+      padding-left: 0; }
+    header.menu nav ul li:nth-of-type(5) {
+      padding-left: 0; }
+    header.menu nav ul li:nth-of-type(13) {
+      padding-left: 0; }
+    header.menu nav ul li:nth-of-type(15) {
+      padding-left: 0;
+      margin-bottom: 1.3rem; }
+    header.menu nav ul li:nth-of-type(16), header.menu nav ul li:nth-of-type(17), header.menu nav ul li:nth-of-type(18) {
+      padding-left: 0;
+      letter-spacing: 1px; }
   header.menu nav ul.show {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -292,12 +534,16 @@ header.menu {
     -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
   header.menu nav li {
+    padding-left: 1rem;
     margin-left: 3rem; }
-    header.menu nav li h2 {
-      margin-top: 2rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.5rem; }
+    header.menu nav li a {
+      padding: 0; }
+      header.menu nav li a h2 {
+        margin-top: 1.7rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem; }
 
 .back {
   position: absolute;
@@ -350,8 +596,10 @@ button.return:hover {
   margin-top: 1rem; }
 
 .eshot_footer {
+  width: 4rem;
+  height: inherit;
   position: absolute;
-  left: 0; }
+  left: 1rem; }
 
 /*----------------------Showcase*/
 /*Menu*/
@@ -361,7 +609,7 @@ header.nav_bar {
   header.nav_bar nav {
     margin: 0; }
     header.nav_bar nav ul {
-      padding-bottom: 1.5rem;
+      padding-bottom: 1rem;
       margin: 0;
       background-color: #fcf2f3; }
       header.nav_bar nav ul li {
@@ -389,7 +637,8 @@ header.nav_bar {
           header.nav_bar nav ul li a h3 {
             position: relative;
             z-index: 2;
-            text-align: center; }
+            text-align: center;
+            padding-top: 1rem; }
     header.nav_bar nav a:hover, header.nav_bar nav a.bg_fleche {
       color: #fff; }
       header.nav_bar nav a:hover img, header.nav_bar nav a.bg_fleche img {
@@ -407,25 +656,79 @@ section.gallery {
     display: flex;
     flex-wrap: wrap; }
     section.gallery ul li {
-      padding: 2rem; }
+      padding: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      width: 29%;
+      -webkit-transition: width 0.5s ease-in-out;
+      -moz-transition: width 0.5s ease-in-out;
+      -ms-transition: width 0.5s ease-in-out;
+      -o-transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
+      display: inline-block;
+      position: relative; }
       section.gallery ul li img {
+        cursor: pointer;
         position: relative;
         z-index: 2;
-        width: 15rem;
+        width: 100% !important;
         height: auto;
-        padding: 2rem;
-        -webkit-box-shadow: inset 0 0 1rem 1px #ffc2c2;
-        -moz-box-shadow: inset 0 0 1rem 1px #ffc2c2;
-        box-shadow: inset 0 0 1rem 1px #ffc2c2;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s; }
+        border: 2rem solid white;
+        /*
+        -webkit-box-shadow: inset 0 0 1rem 1px darken($rose,5);
+        -moz-box-shadow: inset 0 0 1rem 1px darken($rose,5);
+        box-shadow: inset 0 0 1rem 1px darken($rose,5);
+        @include transition(all,0.3s);
+        */ }
       section.gallery ul li img:hover {
-        -webkit-box-shadow: inset 0 0 0 3rem #ffa8a8;
-        -moz-box-shadow: inset 0 0 0 3rem #ffa8a8;
-        box-shadow: inset 0 0 0 3rem #ffa8a8; }
+        /*
+        -webkit-box-shadow: inset 0 0 0 3rem darken($rose,10);
+        -moz-box-shadow: inset 0 0 0 3rem darken($rose,10);
+        box-shadow: inset 0 0 0 3rem darken($rose,10);
+        */ }
+
+.arrow-left {
+  background-image: url("../images/interface/arrow-left.svg");
+  background-size: 20px 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 6; }
+
+.arrow-right {
+  background-image: url("../images/interface/arrow-right.svg");
+  background-size: 20px 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 6; }
+
+.bigger {
+  width: 40% !important;
+  margin: auto;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.controls div {
+  cursor: pointer; }
 
 /*----------------------Consulting*/
 /*Consutling*/
@@ -445,7 +748,8 @@ section.consulting a {
   section.consulting a h3 {
     position: relative;
     z-index: 2;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
 section.consulting li, section.consulting a, section.consulting ul {
   padding: 0; }
 
@@ -454,10 +758,6 @@ section.consulting li, section.consulting a, section.consulting ul {
   padding-bottom: 3rem;
   z-index: 2;
   background-color: #fff; }
-
-h6 {
-  text-align: center;
-  font-size: 1.5rem; }
 
 article {
   margin-bottom: 3rem; }
@@ -483,22 +783,23 @@ article {
   max-width: 100%; }
   .slider ul {
     margin: 0; }
-  .slider li {
-    margin: 0;
-    padding: 0; }
-    .slider li img, .slider li video {
-      max-width: 100%;
-      height: 100%;
-      width: 100vw;
-      display: block; }
+  .slider li video {
+    max-width: 95vw; }
+
+.white_bg {
+  background-color: #fff; }
+
+.black_bg {
+  background-color: #000; }
 
 section > header > p:first-of-type {
   z-index: 3;
   background-color: #fff;
-  padding: 2rem;
+  padding: 4rem;
   color: #000;
   margin-bottom: 2rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 0.8rem; }
 
 .unslider-nav {
   position: absolute;
@@ -572,7 +873,9 @@ section.common {
 
 footer {
   background-color: #d1e4ee;
-  padding-top: 4rem; }
+  padding-top: 2.7rem; }
+  footer p {
+    font-size: 0.8rem; }
   footer address ul li {
     display: inline-flex; }
     footer address ul li img {
@@ -609,7 +912,8 @@ footer {
   position: absolute;
   top: 13vw;
   left: 25%;
-  width: 44%; }
+  width: 44%;
+  margin-bottom: 0; }
   .over_impressum ul {
     margin-bottom: 0; }
 
@@ -654,31 +958,54 @@ ul.job_list {
       -webkit-box-shadow: inset 0px 0px 0px 50px #4f72aa;
       -moz-box-shadow: inset 0px 0px 0px 50px #4f72aa;
       box-shadow: inset 0px 0px 0px 50px #4f72aa; }
-    ul.job_list li a.mailto {
-      text-transform: uppercase;
-      color: #000, !important;
-      position: relative; }
-    ul.job_list li a.mailto:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-      width: 2px;
-      height: 10px;
-      background-color: black; }
 
-article.job_description {
+section.consulting article.job_description {
   background-color: #fff;
   padding: 2rem;
   margin-bottom: 5rem; }
-  article.job_description ul {
+  section.consulting article.job_description li {
+    font-size: 0.8rem;
+    line-height: 1.3rem; }
+    section.consulting article.job_description li a.mailto {
+      left: 3px;
+      text-transform: uppercase;
+      color: #000;
+      position: relative; }
+    section.consulting article.job_description li a.mailto:after {
+      content: '';
+      position: absolute;
+      z-index: 4;
+      left: -4px;
+      top: 0;
+      display: block;
+      width: 2px;
+      height: 100%;
+      background-color: black; }
+    section.consulting article.job_description li a.mailto:before {
+      content: '';
+      position: absolute;
+      z-index: 4;
+      left: 110%;
+      top: 0;
+      display: block;
+      width: 2px;
+      height: 100%;
+      background-color: black; }
+  section.consulting article.job_description p.bottom {
+    margin-top: 2rem; }
+  section.consulting article.job_description ul {
     margin-left: 6%; }
 
 section.consulting a.allgemeine {
   color: #000;
   font-weight: bold; }
 
+img.side {
+  position: absolute;
+  top: 1rem;
+  left: 0; }
+
+.es
 .footer_map {
   margin: 0;
   width: 100vw;
