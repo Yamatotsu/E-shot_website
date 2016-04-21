@@ -1,20 +1,94 @@
 /*Import fonts*/
 
-
-
-
-.off {
+.mehr{
+  line-height: 2rem;
+  font-style: italic;
+}
+.citate {
   position: absolute;
   top:15vw;
-  left:40vw;
-  z-index:99;
+  left:0;
+  width:100%;
+  z-index:5;
   color: darken($rose,15);
+  white-space: nowrap;
+}
+.blue{
+  color: $bleu;
+}
+.rose {
+  color: $rose;
 }
 .font_slide{
-  @extend .off
+  text-align: center;
+  @extend .bold;
+  font-size:5.8vw;
+
 }
 .subtitle{
-  @extend .off;
-  top:20vw;
+  text-align: center;
+  font-size:3vw;
+  color:$bleu;
+  @extend .nimbus;
 }
 
+
+
+p{
+  font-family:"acumin-pro",sans-serif;
+}
+.italic{
+  font-style: italic;
+}
+.bold{
+  font-family: "acumin-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+h3{
+  @extend .bold;
+  padding-top:0.2rem;
+  margin-bottom:0;
+}
+h4{
+  @extend .bold;
+  font-size:1.3rem;
+  margin-bottom:1.2rem;
+  margin-top:1.2rem;
+}
+h4>span{
+  color:$bleu;
+}
+h5{
+  @extend .bold;
+  margin-top:0.8rem;
+  font-size:1rem;
+  text-align: center;
+  margin-bottom:3rem;
+}
+/*footer kontakt*/
+h2>a{
+  @extend .bold;
+  font-size:1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top:-13px;
+}
+
+a>h2{
+  @extend .bold;
+}
+h6{
+  @extend .bold;
+  text-align: center;
+  font-size:1.2rem;
+  margin-top: 1.5rem;
+}
+.nimbus{
+  font-family: "nimbus-roman",serif;
+  font-style: italic;
+}
+body section header p.exergue{
+  font-size:1.5rem;
+}
