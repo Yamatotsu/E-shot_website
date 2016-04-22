@@ -185,16 +185,39 @@ header.nav_bar{
   nav{
     margin:0;
     ul{
-      padding-bottom:1rem;
       margin:0;
+      padding:0;
       background-color: #fcf2f3;
-      li {
+      li,li.none:hover {
         padding: 0;
+        padding-bottom:1rem;
         margin: 0;
 
+        -webkit-box-shadow: inset 0px 0px 0px 0px #e59598;
+        -moz-box-shadow: inset 0px 0px 0px 0px #e59598;
+        box-shadow: inset 0px 0px 0px 0px #e59598;
+        @include transition(all, 0.9s);
+        @include smooth_transition;
+        a:after{
+          content: '';
+          position: absolute;
+          display: block;
+          top:0;
+          left:0;
+          width:100%;
+          height:4rem;
+
+
+        }
+        a.bleu:after{
+          background-color: $bleu;
+        }
         a {
+          position: relative;
           color: #fff;
           img {
+            display: none;
+            /*
             position: absolute;
             top: 0;
             display: block;
@@ -203,25 +226,39 @@ header.nav_bar{
             opacity: 0;
             @include transition(all, 0.3s);
             @include translate3d (0, -50%, 0);
+            */
           }
-          h3 {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding-top:1rem;
+        }
+        h3 {
+          position: relative;
+          z-index: 2;
+          text-align: center;
+          padding-top:1rem;
+          font-size:1.8rem;
+
+        }
+        a.bg_fleche{
+          color: #fff;
+          img{
+            position: absolute;
+            top: 0;
+            display: block;
+            z-index: 1;
+            width: 100%;
+            opacity:1;
+            @include translate3d (0,0,0);
           }
         }
       }
-    }
-    a:hover, a.bg_fleche{
-      color: #fff;
-      img{
-        opacity:1;
-        @include translate3d (0,0,0);
+      li:hover,li.actived{
+        -webkit-box-shadow: inset 0px 0px 0px 250px #e59598;
+        -moz-box-shadow: inset 0px 0px 0px 250px #e59598;
+        box-shadow: inset 0px 0px 0px 250px #e59598;
       }
     }
   }
 }
+
 /*Gallery*/
 section.gallery{
   margin-top:3rem;
@@ -254,7 +291,7 @@ section.gallery{
         box-shadow: inset 0 0 1rem 1px darken($rose,5);
         @include transition(all,0.3s);
         */
-        }
+      }
       img:hover{
         /*
         -webkit-box-shadow: inset 0 0 0 3rem darken($rose,10);
@@ -262,8 +299,8 @@ section.gallery{
         box-shadow: inset 0 0 0 3rem darken($rose,10);
         */
       }
-        }
-      }
+    }
+  }
 }
 
 .arrow-left {
@@ -320,7 +357,7 @@ section.gallery{
 /*----------------------Consulting*/
 /*Consutling*/
 section.consulting{
-    p{
+  p{
     background-color: #fff;
     text-align: center;
     z-index:3;
@@ -330,7 +367,7 @@ section.consulting{
     color: #fff;
     img {
       position: absolute;
-      top: 0;
+      top: -20px;
       display: block;
       z-index: 1;
       width: 100%;
@@ -340,17 +377,25 @@ section.consulting{
       z-index: 2;
       text-align: center;
       font-size:1.5rem;
+      top:-15px;
+
     }
   }
   li,a,ul{
     padding:0;
   }
 }
-.info_bloc{
+div.info_bloc{
   padding-top:3rem;
   padding-bottom:3rem;
   z-index:2;
   background-color: #fff;
+  p {
+    a {
+      color: #000;
+      @extend .bold;
+    }
+  }
 }
 article{
   margin-bottom:3rem;
@@ -385,8 +430,8 @@ article{
     video{
       max-width:95vw;
     }
-      }
   }
+}
 
 .white_bg{
   background-color: #fff;
@@ -515,13 +560,12 @@ footer{
 
   address {
     ul {
+      display: inline-flex;
+      flex-wrap: nowrap;
       li {
-        display: inline-flex;
-
         img {
           width: 1.5rem;
           height: 1.5rem;
-
         }
       }
     }
@@ -569,10 +613,10 @@ footer{
   }
 }
 .over_agb{
-    position: absolute;
-    top:18vw;
-    left:32%;
-    width:30%;
+  position: absolute;
+  top:18vw;
+  left:32%;
+  width:30%;
   ul{
     margin-bottom:0;
   }
@@ -666,7 +710,7 @@ section.consulting{
   a.allgemeine{
     color: #000;
     font-weight:bold;
-    }
+  }
 }
 img.side{
   position: absolute;
