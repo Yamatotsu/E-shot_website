@@ -21,8 +21,9 @@
     </div>
 </div>
 
+
 <header class="row navbar-fixed-top menu">
-    <nav class="col-lg-6">
+    <nav class="col-lg-5">
         <ul class=" menu col-lg-10">
             <li><a href="about.html"><h2>About</h2></a></li>
             <li><a href="about.html#what_we_do">What we do</a></li>
@@ -42,9 +43,6 @@
             <li><a href="karriere.html">Karriere</a></li>
             <li><a href="agb.html">Agb</a></li>
             <li><a href="impressum.html">Impressum</a></li>
-            <li class="col-lg-2 back"><button class="return">
-                <img src="css/images/interface/return_arrow.svg" alt="return_arrow">
-            </button></li>
         </ul>
         <button class="col-lg-1 button_menu navbar-fixed-top">
             <svg class="mn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 19.6"><title>Menu_button</title>
@@ -56,10 +54,7 @@
     </nav>
     <a href="index.html"><h1 class="eshot">E-Shot</h1></a>
 </header>
-<div class="citate">
-    <h2 class="font_slide">Berlin  <br class="rwd-break"> Calling</h2>
-    <p class="subtitle">- We would be happy to hear from you -</p>
-</div>
+
 <section class="slider fixe row">
     <ul>
         <li><img src="css/images/bg/about/about_bg_2.jpg" alt="people_working_on_eshot_office"></li>
@@ -71,7 +66,7 @@
     <header class="col-xs-12 center-block nav_bar">
         <nav>
             <ul class="col-xs-12">
-                <li>
+                <li class="none">
                     <a href="#" class="bg_fleche col-xs-2 col-xs-offset-5 col-lg-2 col-lg-offset-3"><h3 class="bleu">Karriere</h3>
                         <img src="css/images/interface/cadre_fleche.svg" alt="cadre_bleu" class="">
                     </a>
@@ -163,18 +158,15 @@
             <li>◉  Ein junges Team, das sich auf Dich freut.</li>
             <li>◉  Die Möglichkeit, Deine fachlichen und menschlichen.</li>
             <li><p class=" bottom bold left-align">Stärken einzubringen und zu entwickeln
-                Bitte sende uns Deine schriftliche Bewerbung mit Angabe des möglichen Starttermins und Gehaltsvorstellung per <a href="mailto:@" class="mailto"> mail</a> </p></li>
+                Bitte sende uns Deine schriftliche Bewerbung mit Angabe des möglichen Starttermins und Gehaltsvorstellung per <a href="mailto:@info@-berlin.de" class="mailto"> mail</a> </p></li>
         </ul>
     </article>
 </section>
 
 
-
 <footer class="row">
-    <a class="eshot_footer" href="index.html">E-Shot</a>
-    <p class="col-lg-4 col-xs-2">©2016 eShot AG - All rights reserved</p>
-    <h2 class="col-lg-2 col-xs-2 col-lg-offset-4 col-xs-offset-4"><a href="kontakt.html">Kontakt</a></h2>
-    <address class="col-lg-2 col-xs-2">
+    <p class="col-lg-4 col-xs-6">©2016 eShot AG - All rights reserved</p>
+    <address class="col-lg-2 col-lg-offset-6 col-xs-2 col-xs-offset-4 ">
         <ul >
             <li><a href="https://www.xing.com/companies/eshotag"><img src="css/images/icones/xing_icon.svg" alt="xign_icon"></a></li>
             <li><a href="https://www.facebook.com/EShotBerlin/"><img src="css/images/icones/fb_icon.svg" alt="facebook_icon"></a></li>
@@ -187,7 +179,15 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/unslider-min.js"></script>
 <script src="js/script.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $('.slider').unslider({
+            animation: 'horizontal', autoplay: false, arrows: false, infinite: true
+        });
+    });
+</script>
 
 </body>
 </html>
