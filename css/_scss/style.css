@@ -2,16 +2,9 @@
 /*Animations*/
 .animate-in {
   -webkit-animation: scaled 0.5s;
-  animation: scaled 0.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+  animation: scaled 0.5s; }
 
 .animate-out {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
   opacity: 0; }
 
 @-webkit-keyframes scaled {
@@ -50,12 +43,6 @@ svg.menu_trigger path:nth-of-type(1) {
   -ms-transform: rotateZ(27deg) rotateX(-16deg) rotateY(-31deg) translate(20%, 0);
   -o-transform: rotateZ(27deg) rotateX(-16deg) rotateY(-31deg) translate(20%, 0);
   transform: rotateZ(27deg) rotateX(-16deg) rotateY(-31deg) translate(20%, 0);
-  transition: all 1s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   fill: #fff; }
 svg.menu_trigger path:nth-of-type(3) {
   -webkit-transform: rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%, 0);
@@ -63,12 +50,6 @@ svg.menu_trigger path:nth-of-type(3) {
   -ms-transform: rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%, 0);
   -o-transform: rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%, 0);
   transform: rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%, 0);
-  transition: all 1s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   fill: #fff; }
 svg.menu_trigger path:nth-of-type(2) {
   -webkit-transform: rotateY(-110deg);
@@ -76,12 +57,6 @@ svg.menu_trigger path:nth-of-type(2) {
   -ms-transform: rotateY(-110deg);
   -o-transform: rotateY(-110deg);
   transform: rotateY(-110deg);
-  transition: all 1s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   fill: #fff; }
 
 svg path:nth-of-type(1) {
@@ -89,37 +64,19 @@ svg path:nth-of-type(1) {
   -moz-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
   -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
   -o-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
-  transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
-  transition: all 1s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+  transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0); }
 svg path:nth-of-type(3) {
   -webkit-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
   -moz-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
   -ms-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
   -o-transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
-  transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0);
-  transition: all 1s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+  transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate(0, 0); }
 svg path:nth-of-type(2) {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  transition: all 1s;
-  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  -o-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+  transform: rotateY(0deg); }
 
 /*H3 animations to the bottom */
 .origine, h3.center, img.fleche, #status {
@@ -241,7 +198,7 @@ h4 > span {
 
 h5 {
   margin-top: 0.8rem;
-  font-size: 1rem;
+  font-size: 1vw;
   text-align: center;
   margin-bottom: 3rem; }
 
@@ -264,6 +221,10 @@ h6 {
 
 body section header p.exergue {
   font-size: 1.5rem; }
+
+.over_impressum h6, .over_slide h6 {
+  font-size: 1rem;
+  font-weight: 800; }
 
 @media screen and (max-width: 380px) {
   body > section > header > p:first-of-type {
@@ -302,15 +263,15 @@ body section header p.exergue {
     line-height: 0;
     padding: 0; }
 
-  .slider {
+  section.slider {
     z-index: -1;
     height: 100vh;
     max-height: 100%;
     width: 100vw;
     max-width: 100%; }
-    .slider ul {
+    section.slider ul {
       margin: 0; }
-    .slider li {
+    section.slider li {
       margin: 0;
       padding: 0; }
 
@@ -318,8 +279,14 @@ body section header p.exergue {
     font-size: 6vw; }
 
   /*menu*/
-  body header.menu nav ul {
-    padding-left: 2rem; }
+  body, html {
+    height: 100%;
+    max-height: 100%; }
+    body header.menu nav ul, html header.menu nav ul {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      height: 100vh;
+      overflow-y: scroll; }
 
   /*Footer*/
   .eshot_footer {
@@ -338,12 +305,15 @@ body section header p.exergue {
         height: 1.5rem; }
 
   /*About*/
+  main {
+    margin-bottom: 5rem; }
+
   ul.pics {
     margin: 0;
     padding: 0; }
 
-  .pic {
-    width: 80%; }
+  img.pic {
+    width: 20%; }
 
   h5 {
     font-size: 0.9rem; }
@@ -377,7 +347,7 @@ body section header p.exergue {
 
   article.over_agb, article.over_impressum, article.over_slide {
     position: absolute;
-    top: 5vw;
+    top: 25vw;
     left: 0;
     width: 100%;
     max-height: 95vh;
@@ -434,10 +404,14 @@ body section header p.exergue {
       margin: 0;
       position: relative; }
       section header.nav_bar nav ul {
+        height: 0;
+        width: 0;
         padding-bottom: 0;
         margin: 0;
         background-color: inherit; }
         section header.nav_bar nav ul li {
+          height: 0;
+          width: 0;
           position: absolute;
           padding: 0;
           margin: 0; }
@@ -527,10 +501,11 @@ header.menu {
     position: absolute;
     right: 0;
     left: 0;
-    height: 100vh;
     padding-left: 8rem;
     padding-top: 7rem;
     margin-bottom: 0;
+    height: auto;
+    min-height: 100vh;
     -webkit-transform: translate3d(-100%, 0, 0);
     -moz-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
@@ -617,19 +592,20 @@ button.return {
     width: 1rem;
     height: 0.8rem; }
 
-button.return:hover {
-  background-color: #ffc2c2; }
-
 .button_menu {
   width: 4rem;
   height: 4rem;
-  margin: 1rem; }
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  padding-left: .9375rem; }
 
 /*H1*/
 .eshot, .eshot_footer {
   position: fixed;
-  top: 0;
-  right: 2rem;
+  top: 1rem;
+  right: .9375rem;
   background-image: url(../images/interface/Logo.svg);
   width: 6rem;
   height: 6rem;
@@ -662,11 +638,11 @@ header.nav_bar {
         -webkit-box-shadow: inset 0px 0px 0px 0px #e59598;
         -moz-box-shadow: inset 0px 0px 0px 0px #e59598;
         box-shadow: inset 0px 0px 0px 0px #e59598;
-        -webkit-transition: all 0.9s;
-        -moz-transition: all 0.9s;
-        -ms-transition: all 0.9s;
-        -o-transition: all 0.9s;
-        transition: all 0.9s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
         -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
         -moz-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
         -ms-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
@@ -744,7 +720,9 @@ section.gallery {
         cursor: pointer;
         position: relative;
         z-index: 2;
-        width: 100% !important;
+        width: 100%;
+        height: 29%;
+        min-height: 29%;
         height: auto;
         border: 2rem solid white;
         /*
@@ -803,6 +781,9 @@ section.gallery {
 .controls div {
   cursor: pointer; }
 
+body > section > header > p.cgi {
+  margin-bottom: 9rem; }
+
 /*----------------------Consulting*/
 /*Consutling*/
 section.consulting p {
@@ -844,8 +825,8 @@ article {
   top: 0; }
 
 .illustr {
-  width: 17rem;
-  height: 15rem; }
+  width: 14rem;
+  height: 11rem; }
 
 .illustr + h4, .illustr + h4 + p {
   padding-left: 3rem;
@@ -954,7 +935,8 @@ footer {
     font-size: 0.8rem; }
   footer address ul {
     display: inline-flex;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    float: right; }
     footer address ul li img {
       width: 1.5rem;
       height: 1.5rem; }
@@ -1075,7 +1057,8 @@ section.consulting article.job_description {
 
 section.consulting a.allgemeine {
   color: #000;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-left: .9375rem; }
 
 img.side {
   position: absolute;

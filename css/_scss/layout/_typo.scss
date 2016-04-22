@@ -62,7 +62,7 @@ h4>span{
 h5{
   @extend .bold;
   margin-top:0.8rem;
-  font-size:1rem;
+  font-size:1vw;
   text-align: center;
   margin-bottom:3rem;
 }
@@ -85,10 +85,18 @@ h6{
   font-size:1.2rem;
   margin-top: 1.5rem;
 }
+
 .nimbus{
   font-family: "nimbus-roman",serif;
   font-style: italic;
 }
 body section header p.exergue{
   font-size:1.5rem;
+}
+
+.over_impressum,.over_slide{
+  h6{
+    font-size:1rem;
+    font-weight:800;
+  }
 }

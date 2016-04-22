@@ -53,7 +53,7 @@
     padding: 0;
   }
 
-  .slider {
+  section.slider {
     z-index: -1;
     height: 100vh;
     max-height: 100%;
@@ -67,17 +67,23 @@
       margin: 0;
       padding: 0;
     }
+
   }
   h3{
     font-size:6vw;
   }
 
   /*menu*/
-  body{
+  body,html{
+    height: 100%;
+    max-height:100%;
       header.menu {
         nav {
           ul {
+            padding-top:2rem;
             padding-left: 2rem;
+            height:100vh;
+            overflow-y: scroll;
           }
         }
       }
@@ -111,12 +117,15 @@
 
 
   /*About*/
+  main{
+    margin-bottom:5rem;
+  }
   ul.pics {
     margin: 0;
     padding: 0;
   }
-  .pic {
-    width: 80%;
+  img.pic {
+    width: 20%;
   }
   h5 {
     font-size: 0.9rem;
@@ -155,7 +164,8 @@
   }
   article.over_agb,article.over_impressum,article.over_slide{
     position: absolute;
-    top:5vw;
+
+    top:25vw;
     left:0;
     width:100%;
     max-height: 95vh;
@@ -232,10 +242,14 @@
         margin: 0;
         position: relative;
         ul {
+          height:0;
+          width:0;
           padding-bottom: 0;
           margin: 0;
           background-color: inherit;
           li {
+            height:0;
+            width:0;
             position: absolute;
             padding: 0;
             margin: 0;
