@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-shot</title>
+    <title>e-Shot</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/unslider.css" />
-    <link rel="stylesheet" href="css/unslider-dots.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/_scss/style.css" />
     <script src="https://use.typekit.net/fkj6dbo.js"></script>
@@ -24,7 +23,7 @@
 </div>
 
 <header class="row navbar-fixed-top menu">
-    <nav class="col-lg-6">
+    <nav class="col-lg-5">
         <ul class=" menu col-lg-10">
             <li><a href="about.html"><h2>About</h2></a></li>
             <li><a href="about.html#what_we_do">What we do</a></li>
@@ -44,9 +43,6 @@
             <li><a href="karriere.html">Karriere</a></li>
             <li><a href="agb.html">Agb</a></li>
             <li><a href="impressum.html">Impressum</a></li>
-            <li class="col-lg-2 back"><button class="return">
-                <img src="css/images/interface/return_arrow.svg" alt="return_arrow">
-            </button></li>
         </ul>
         <button class="col-lg-1 button_menu navbar-fixed-top">
             <svg class="mn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 19.6"><title>Menu_button</title>
@@ -58,17 +54,10 @@
     </nav>
     <a href="index.html"><h1 class="eshot">E-Shot</h1></a>
 </header>
-<div class="citate">
-    <h2 class="font_slide">Zusammen <br class="rwd-break"> noch <br class="rwd-break"> besser.</h2>
-    <p class="subtitle">Entdecke die eShot Firmengruppe</p>
-</div>
+
 <section class="slider fixe row">
     <ul>
         <li><img src="css/images/bg/eShot_Main2.jpg" alt=""></li>
-        <li><img src="css/images/bg/001.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main5.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main3.jpg" alt=""></li>
-        <li><img src="css/images/bg/eShot_Main8.jpg" alt=""></li>
     </ul>
 </section>
 
@@ -86,10 +75,11 @@
         var unslider = jQuery('.slider').unslider({
                     speed: 500,
                     delay: 3000,
-                    dots: true,
+                    dots: false,
                     arrows: false,
-                    autoplay: true,
+                    autoplay: false,
                     infinite: true,
+                    nav: false,
                     animation: 'horizontal'
                 }),
                 data = unslider.data('unslider');
@@ -111,7 +101,6 @@
                         e.preventDefault();
                     }
                 });
-
     });
 </script>
 </body>

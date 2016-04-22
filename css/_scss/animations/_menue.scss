@@ -47,12 +47,10 @@
 .animate-in {
   -webkit-animation: scaled .5s ;
   animation: scaled .5s ;
-   @include smooth_transition;
 }
 
 .animate-out {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+
   opacity: 0;
 }
 
@@ -86,8 +84,7 @@ svg.menu_trigger{
     -ms-transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
     -o-transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
     transform: (rotateZ(27deg) rotateX(-16deg)  rotateY(-31deg) translate(20%,0)  );
-    transition: all 1s;
-    @include smooth_transition;
+
     fill: #fff;
   }
   path:nth-of-type(3){
@@ -96,8 +93,7 @@ svg.menu_trigger{
     -ms-transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
     -o-transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
     transform: (rotateZ(-31deg) rotateX(-17deg) rotateY(34deg) translate(-29%,0));
-    transition: all 1s;
-    @include smooth_transition;
+
     fill: #fff;
   }
   path:nth-of-type(2){
@@ -106,8 +102,7 @@ svg.menu_trigger{
     -ms-transform: rotateY(-110deg) ;
     -o-transform: rotateY(-110deg) ;
     transform: rotateY(-110deg) ;
-    transition: all 1s;
-    @include smooth_transition;
+
     fill: #fff;
   }
 }
@@ -120,8 +115,6 @@ svg{
     -ms-transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
     -o-transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
     transform: (rotateZ(0deg) rotateX(0deg)  rotateY(-0deg) translate(0,0));
-    transition: all 1s;
-    @include smooth_transition;
   }
   path:nth-of-type(3){
     -webkit-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
@@ -129,8 +122,6 @@ svg{
     -ms-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
     -o-transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
     transform: (rotateZ(-0deg) rotateX(-0deg) rotateY(0deg) translate(0,0));
-    transition: all 1s;
-    @include smooth_transition;
   }
   path:nth-of-type(2){
     -webkit-transform: rotateY(0deg) ;
@@ -138,7 +129,5 @@ svg{
     -ms-transform: rotateY(0deg) ;
     -o-transform: rotateY(0deg) ;
     transform: rotateY(0deg) ;
-    transition: all 1s;
-    @include smooth_transition;
   }
 }
