@@ -99,11 +99,19 @@ svg path:nth-of-type(2) {
   display: block;
   animation: scroll_down 3s; }
 
+li.none > a {
+  animation: scroll_down_2 3s; }
+
 @keyframes scroll_down {
   0% {
     top: -20vw; }
   100% {
     top: -5vw; } }
+@keyframes scroll_down_2 {
+  0% {
+    top: -20vw; }
+  100% {
+    top: -0vw; } }
 h3.center {
   z-index: 2;
   border-radius: 0.2rem;
@@ -179,7 +187,7 @@ p {
 .italic {
   font-style: italic; }
 
-.bold, .font_slide, h3, h4, h5, h2 > a, a > h2, h6, #preloader p, header.menu nav ul li:nth-of-type(16), header.menu nav ul li:nth-of-type(17), header.menu nav ul li:nth-of-type(18), div.info_bloc p a {
+.bold, .font_slide, h3, h4, h5, h2 > a, a > h2, h6, #preloader p, div.info_bloc p a {
   font-family: "acumin-pro",sans-serif;
   font-style: normal;
   font-weight: 700; }
@@ -532,8 +540,9 @@ header.menu {
     header.menu nav ul li:nth-of-type(15) {
       padding-left: 0;
       margin-bottom: 1.3rem; }
-    header.menu nav ul li:nth-of-type(16), header.menu nav ul li:nth-of-type(17), header.menu nav ul li:nth-of-type(18) {
+    header.menu nav ul li:nth-of-type(16) > a, header.menu nav ul li:nth-of-type(17) > a, header.menu nav ul li:nth-of-type(18) > a {
       padding-left: 0;
+      font-family: "acumin-pro",sans-serif;
       letter-spacing: 1px; }
   header.menu nav ul.show {
     -webkit-transform: translate3d(0, 0, 0);
@@ -608,7 +617,7 @@ button.return {
   right: .9375rem;
   background-image: url(../images/interface/Logo.svg);
   width: 6rem;
-  height: 6rem;
+  height: 3rem;
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
@@ -840,7 +849,7 @@ article {
   max-width: 100%; }
   .slider ul {
     margin: 0; }
-  .slider li video {
+  .slider li video, .slider li img {
     max-width: 95vw; }
 
 .white_bg {

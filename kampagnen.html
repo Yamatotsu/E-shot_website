@@ -149,18 +149,8 @@
 <script>
     jQuery(document).ready(function($) {
         $('.slider').unslider({
-            animation: 'fade', autoplay: true, speed:900, arrows: false, animateHeight: true, infinite: true
+            animation: 'horizontal', dots: false, nav: false, autoplay: true, arrows: false, infinite: true
         });
-        var slides = $('.slider'),
-                i = 0;
-
-        slides
-                .on('swipeleft', function(e) {
-                    unslider.prev();
-                })
-                .on('swiperight', function(e) {
-                    unslider.next();
-                });
     });
 </script>
 </body>
